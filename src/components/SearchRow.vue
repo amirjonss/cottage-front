@@ -144,7 +144,7 @@
       </div>
     </div>
 
-    <div class="col-12 col-sm-6 col-xs-6 q-pt-xs ">
+    <div class="col-12 col-sm-6 col-xs-6 q-pt-lg ">
       <div class="q-pa-md">
         <q-range
           v-model="label"
