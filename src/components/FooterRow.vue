@@ -1,27 +1,28 @@
 <template>
-  <q-footer class="bg-grey-9 q-py-xs" elevated reveal>
+  <div style="position: absolute; bottom: 0; width: 100%">
     <q-tabs
       v-model="tab"
-      indicator-color="white"
       class="bg-grey-9 text-teal"
+      indicator-color="white"
     >
-      <q-tab class="text-white q-px-none" name="home" icon="home" no-caps />
-      <q-tab class="text-white q-px-none" name="contacts" icon="contacts" no-caps />
-      <q-tab class="text-white q-px-none" name="add" icon="add" no-caps />
-      <q-tab class="text-white q-px-none" name="chat" icon="chat" no-caps />
-      <q-tab class="text-white q-px-none" name="settings" icon="settings" no-caps />
+      <q-tab class="text-white q-px-none" icon="home" name="home" no-caps />
+      <q-tab class="text-white q-px-none" icon="contacts" name="contacts" no-caps />
+      <q-tab class="text-white q-px-none" icon="add" name="add" no-caps />
+      <q-tab class="text-white q-px-none" icon="chat" name="chat" no-caps />
+      <q-tab class="text-white q-px-none" icon="settings" name="settings" no-caps />
     </q-tabs>
-  </q-footer>
+  </div>
 </template>
 
 <script>
-import { ref } from 'vue'
+import { ref } from "vue";
+
 export default {
   name: "FooterRow",
-  setup () {
+  setup() {
     return {
-      tab: ref('contacts')
-    }
+      tab: ref("contacts")
+    };
   }
 };
 </script>
