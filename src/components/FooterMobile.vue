@@ -1,5 +1,5 @@
 <template>
-  <div style="position: absolute; bottom: 0; width: 100%">
+  <div style="position: absolute; bottom: 0; width: 100%" class="lt-sm">
     <q-tabs
       v-model="tab"
       class="bg-grey-9 text-teal"
@@ -18,7 +18,7 @@
 import { ref } from "vue";
 
 export default {
-  name: "FooterRow",
+  name: "FooterMobile",
   setup() {
     return {
       tab: ref("contacts")

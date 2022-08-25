@@ -4,18 +4,21 @@
       <header-row />
       <content-row />
     </q-layout>
-    <footer-row />
+    <FooterMobile />
   </div>
+  <FooterDesktop />
 </template>
 <script>
 import HeaderRow from "components/HeaderRow";
 import ContentRow from "components/ContentRow";
-import FooterRow from "components/FooterRow";
+import FooterMobile from "components/FooterMobile";
+import FooterDesktop from "components/FooterDesktop";
 
 export default {
   name: "HomePage",
   components: {
-    FooterRow,
+    FooterDesktop,
+    FooterMobile,
     ContentRow,
     HeaderRow
   }
