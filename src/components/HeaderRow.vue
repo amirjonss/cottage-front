@@ -1,7 +1,7 @@
 <template>
   <q-header class="bg-grey-9 q-py-xs" elevated reveal>
     <q-toolbar>
-      <q-btn flat icon="cottage" label="dacha" no-caps size="20px" />
+      <q-btn to="/" flat icon="cottage" label="dacha" no-caps size="20px" />
 
       <q-tabs v-model="tab" class="gt-xs absolute-center" shrink stretch>
         <q-tab class="q-pa-sm" label="search" name="search" @click="isVisibleSearch = !isVisibleSearch" />
